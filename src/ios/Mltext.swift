@@ -62,14 +62,14 @@ import Photos
 				
 				case Mltext.FASTFILEURI:
 					image = UIImage(contentsOfFile: imgSrc)
-					image = self.resizeImage(image: self.image)
+					image = self.resizeImage(image: image)
 					break
 				
 				case Mltext.FASTNATIVEURI:
 					let url = URL(string: imgSrc.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? "")
 					if let imageData = self.retrieveAssetDataPhotosFramework(url) {
 						image = UIImage(data: imageData)
-						image = self.resizeImage(image: self.image)
+						image = self.resizeImage(image: image)
 					}
 					break
 				
