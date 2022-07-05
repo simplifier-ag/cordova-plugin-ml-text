@@ -61,11 +61,8 @@
     <source-file src="src/ios/Mltext.swift" target-dir="MltextPlugin" />
 
     <podspec>
-      <config>
-        <source url="https://cdn.cocoapods.org/"/>
-      </config>
       <pods use-frameworks="true">
-        <pod name="GoogleMLKit/TextRecognition" spec="~> 2.2.0" />
+        <pod name="GoogleMLKit/TextRecognition" spec="~> 3.1.0" />
       </pods>
     </podspec>
 
