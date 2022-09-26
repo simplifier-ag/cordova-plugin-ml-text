@@ -65,7 +65,7 @@
         <source url="https://cdn.cocoapods.org/"/>
       </config>
       <pods use-frameworks="true">
-        <pod name="GoogleMLKit/TextRecognition" spec="~> 2.2.0" />
+        <pod name="GoogleMLKit/TextRecognition" spec="~> 3.2.0" />
       </pods>
     </podspec>
 
