@@ -7,7 +7,7 @@
 
   <engines>
     <engine name="cordova-android" version=">=6.4.0" />
-    <engine name="cordova-ios" version=">=6.2.0" />
+    <engine name="cordova-ios" version=">=7.0.0" />
   </engines>
 
   <asset src="www/gettext.js" target="js/gettext.js"/>

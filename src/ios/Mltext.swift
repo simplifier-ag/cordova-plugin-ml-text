@@ -30,13 +30,13 @@ import Photos
 				return
 			}
 			
-			guard let vc: CDVViewController = self.viewController as? CDVViewController,
-				  let settings = vc.settings else {
+			guard let vc: CDVViewController = self.viewController as? CDVViewController else {
 				let pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: "error settings/scheme")
 				self.commandDelegate.send(pluginResult, callbackId:command.callbackId)
 				return
 			}
-			
+
+			 let settings = vc.settings
 			let scheme = (settings["scheme"] as? String)?.lowercased() ?? ""
 			let hostname: String = (settings["hostname"] as? String)?.lowercased() ?? "localhost"
 			
