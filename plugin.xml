@@ -29,10 +29,14 @@
     <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-            <meta-data
-		      android:name="com.google.mlkit.vision.DEPENDENCIES"
-		      android:value="ocr" />
     </config-file>
+
+	<!-- Firebase/Workflows -->
+	<config-file target="AndroidManifest.xml" parent="/manifest/application">
+		<meta-data
+			android:name="com.google.mlkit.vision.DEPENDENCIES"
+			android:value="ocr" />
+	</config-file>
    
     <source-file src="src/android/Mltext.java" target-dir="src/com/neutrinos/mltextplugin/" />
     <framework src="com.google.android.gms:play-services-mlkit-text-recognition:$MLKIT_TEXT_RECOGNITION_VERSION" />
