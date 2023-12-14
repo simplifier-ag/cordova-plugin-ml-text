@@ -286,7 +286,7 @@ import Photos
 		UIGraphicsBeginImageContext(rect.size)
 		image.draw(in: rect)
 		guard let img: UIImage = UIGraphicsGetImageFromCurrentImageContext(),
-			  let imageData = UIImageJPEGRepresentation(img, compressionQuality) else {
+			  let imageData = img.jpegData(compressionQuality: compressionQuality) else {
 			UIGraphicsEndImageContext()
 			return nil
 		}
