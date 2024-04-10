@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         id="cordova-plugin-ml-text"
-        version="4.3.0">
+        version="4.3.1">
 
   <name>Mltext</name>
 
@@ -66,7 +66,7 @@
 
     <podspec>
       <pods use-frameworks="true">
-        <pod name="GoogleMLKit/TextRecognition" spec="~> 3.1.0" />
+        <pod name="GoogleMLKit/TextRecognition" spec="~> 3.2.0" />
       </pods>
     </podspec>
 
